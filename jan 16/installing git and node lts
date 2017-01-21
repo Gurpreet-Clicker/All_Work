@@ -1,0 +1,364 @@
+adminint1@gurpreet-thinkpad-t500:~$ which git
+adminint1@gurpreet-thinkpad-t500:~$ node
+> which git
+SyntaxError: Unexpected identifier
+    at Object.exports.createScript (vm.js:24:10)
+    at REPLServer.defaultEval (repl.js:225:25)
+    at bound (domain.js:287:14)
+    at REPLServer.runBound [as eval] (domain.js:300:12)
+    at REPLServer.<anonymous> (repl.js:417:12)
+    at emitOne (events.js:82:20)
+    at REPLServer.emit (events.js:169:7)
+    at REPLServer.Interface._onLine (readline.js:210:10)
+    at REPLServer.Interface._line (readline.js:549:8)
+    at REPLServer.Interface._ttyWrite (readline.js:826:14)
+> 
+(To exit, press ^C again or type .exit)
+> 
+adminint1@gurpreet-thinkpad-t500:~$ cd ~
+adminint1@gurpreet-thinkpad-t500:~$ cd /
+adminint1@gurpreet-thinkpad-t500:/$ cd ..
+adminint1@gurpreet-thinkpad-t500:/$ node -v
+v4.2.6
+
+
+
+adminint1@gurpreet-thinkpad-t500:/$ sudo apt-get remove nodejs
+sudo: unable to resolve host gurpreet-thinkpad-t500
+[sudo] password for adminint1: 
+Sorry, try again.
+[sudo] password for adminint1: 
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following packages were automatically installed and are no longer required:
+  gyp javascript-common libjs-inherits libjs-jquery libjs-node-uuid
+  libjs-underscore libssl-dev libssl-doc libuv1 libuv1-dev
+  python-pkg-resources zlib1g-dev
+Use 'sudo apt autoremove' to remove them.
+The following packages will be REMOVED:
+  node-abbrev node-ansi node-ansi-color-table node-archy node-async
+  node-block-stream node-combined-stream node-cookie-jar node-delayed-stream
+  node-forever-agent node-form-data node-fstream node-fstream-ignore
+  node-github-url-from-git node-glob node-graceful-fs node-gyp node-inherits
+  node-ini node-json-stringify-safe node-lockfile node-lru-cache node-mime
+  node-minimatch node-mkdirp node-mute-stream node-node-uuid node-nopt
+  node-normalize-package-data node-npmlog node-once node-osenv node-qs
+  node-read node-read-package-json node-request node-retry node-rimraf
+  node-semver node-sha node-sigmund node-slide node-tar node-tunnel-agent
+  node-underscore node-which nodejs nodejs-dev nodejs-legacy npm
+0 upgraded, 0 newly installed, 50 to remove and 285 not upgraded.
+After this operation, 27.7 MB disk space will be freed.
+Do you want to continue? [Y/n] y
+(Reading database ... 181130 files and directories currently installed.)
+Removing npm (3.5.2-0ubuntu4) ...
+Removing node-gyp (3.0.3-2ubuntu1) ...
+Removing node-nopt (3.0.1-1) ...
+Removing node-abbrev (1.0.5-2) ...
+Removing node-ansi-color-table (1.0.0-1) ...
+Removing node-npmlog (0.0.4-1) ...
+Removing node-ansi (0.3.0-2) ...
+Removing node-archy (0.0.2-1) ...
+Removing node-request (2.26.1-1) ...
+Removing node-form-data (0.1.0-1) ...
+Removing node-async (0.8.0-1) ...
+Removing node-tar (1.0.3-2) ...
+Removing node-block-stream (0.0.7-1) ...
+Removing node-combined-stream (0.0.5-1) ...
+Removing node-cookie-jar (0.3.1-1) ...
+Removing node-delayed-stream (0.0.5-1) ...
+Removing node-forever-agent (0.5.1-1) ...
+Removing node-fstream-ignore (0.0.6-2) ...
+Removing node-fstream (0.1.24-1) ...
+Removing node-read-package-json (1.2.4-1) ...
+Removing node-normalize-package-data (0.2.2-1) ...
+Removing node-github-url-from-git (1.1.1-1) ...
+Removing node-glob (4.0.5-1) ...
+Removing node-graceful-fs (3.0.2-1) ...
+Removing node-inherits (2.0.1-3) ...
+Removing node-ini (1.1.0-1) ...
+Removing node-json-stringify-safe (5.0.0-1) ...
+Removing node-lockfile (0.4.1-1) ...
+Removing node-minimatch (1.0.0-1) ...
+Removing node-lru-cache (2.3.1-1) ...
+Removing node-mime (1.3.4-1) ...
+Removing node-mkdirp (0.5.0-1) ...
+Removing node-read (1.0.5-1) ...
+Removing node-mute-stream (0.0.4-1) ...
+Removing node-node-uuid (1.4.0-1) ...
+Removing node-once (1.1.1-1) ...
+Removing node-osenv (0.1.0-1) ...
+Removing node-qs (2.2.4-1) ...
+Removing node-retry (0.6.0-1) ...
+Removing node-rimraf (2.2.8-1) ...
+Removing node-semver (2.1.0-2) ...
+Removing node-sha (1.2.3-1) ...
+Removing node-sigmund (1.0.0-1) ...
+Removing node-slide (1.1.4-1) ...
+Removing node-tunnel-agent (0.3.1-1) ...
+Removing node-underscore (1.7.0~dfsg-1ubuntu1) ...
+Removing node-which (1.0.5-2) ...
+Removing nodejs-legacy (4.2.6~dfsg-1ubuntu4.1) ...
+Removing nodejs-dev (4.2.6~dfsg-1ubuntu4.1) ...
+Removing nodejs (4.2.6~dfsg-1ubuntu4.1) ...
+Processing triggers for man-db (2.7.5-1) ...
+Processing triggers for doc-base (0.10.7) ...
+Processing 4 removed doc-base files...
+adminint1@gurpreet-thinkpad-t500:/$ node
+bash: /usr/bin/node: No such file or directory
+adminint1@gurpreet-thinkpad-t500:/$ node -v
+bash: /usr/bin/node: No such file or directory
+
+
+
+adminint1@gurpreet-thinkpad-t500:/$ sudo apt-get autoremove --purge
+sudo: unable to resolve host gurpreet-thinkpad-t500
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following packages will be REMOVED:
+  gyp* javascript-common* libjs-inherits* libjs-jquery* libjs-node-uuid*
+  libjs-underscore* libssl-dev* libssl-doc* libuv1* libuv1-dev*
+  python-pkg-resources* zlib1g-dev*
+0 upgraded, 0 newly installed, 12 to remove and 285 not upgraded.
+After this operation, 13.7 MB disk space will be freed.
+Do you want to continue? [Y/n] y
+(Reading database ... 177607 files and directories currently installed.)
+Removing gyp (0.1+20150913git1f374df9-1ubuntu1) ...
+Removing javascript-common (11) ...
+Purging configuration files for javascript-common (11) ...
+Removing libjs-inherits (2.0.1-3) ...
+Removing libjs-jquery (1.11.3+dfsg-4) ...
+Removing libjs-node-uuid (1.4.0-1) ...
+Removing libjs-underscore (1.7.0~dfsg-1ubuntu1) ...
+Removing libssl-dev:amd64 (1.0.2g-1ubuntu4.5) ...
+Removing libssl-doc (1.0.2g-1ubuntu4.5) ...
+Removing libuv1-dev:amd64 (1.8.0-1) ...
+Removing libuv1:amd64 (1.8.0-1) ...
+Removing python-pkg-resources (20.7.0-1) ...
+Removing zlib1g-dev:amd64 (1:1.2.8.dfsg-2ubuntu4) ...
+Processing triggers for man-db (2.7.5-1) ...
+Processing triggers for libc-bin (2.23-0ubuntu3) ...
+adminint1@gurpreet-thinkpad-t500:/$ sudo apt-get autoremove --purge node
+sudo: unable to resolve host gurpreet-thinkpad-t500
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+Package 'node' is not installed, so not removed
+0 upgraded, 0 newly installed, 0 to remove and 285 not upgraded.
+adminint1@gurpreet-thinkpad-t500:/$ sudo rm -rf /usr/bin/node
+sudo: unable to resolve host gurpreet-thinkpad-t500
+adminint1@gurpreet-thinkpad-t500:/$ sudo rm - rf /usr/bin/node
+sudo: unable to resolve host gurpreet-thinkpad-t500
+rm: cannot remove '-': No such file or directory
+rm: cannot remove 'rf': No such file or directory
+rm: cannot remove '/usr/bin/node': No such file or directory
+adminint1@gurpreet-thinkpad-t500:/$ sudo rm -rf /usr/bin/node
+sudo: unable to resolve host gurpreet-thinkpad-t500
+adminint1@gurpreet-thinkpad-t500:/$ node
+bash: /usr/bin/node: No such file or directory
+adminint1@gurpreet-thinkpad-t500:/$ curl -L https://git.io/n-install | bash
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0
+100 35655  100 35655    0     0  11696      0  0:00:03  0:00:03 --:--:-- 89137
+n-install: ERROR:
+  `git` not found, which is required for operation.
+
+
+
+adminint1@gurpreet-thinkpad-t500:/$ sudo add-apt-repository ppa:git-core/ppa
+sudo: unable to resolve host gurpreet-thinkpad-t500
+ The most current stable version of Git for Ubuntu.
+
+For release candidates, go to https://launchpad.net/~git-core/+archive/candidate .
+ More info: https://launchpad.net/~git-core/+archive/ubuntu/ppa
+Press [ENTER] to continue or ctrl-c to cancel adding it
+
+gpg: keyring `/tmp/tmpueyfqnio/secring.gpg' created
+gpg: keyring `/tmp/tmpueyfqnio/pubring.gpg' created
+gpg: requesting key E1DF1F24 from hkp server keyserver.ubuntu.com
+gpg: /tmp/tmpueyfqnio/trustdb.gpg: trustdb created
+gpg: key E1DF1F24: public key "Launchpad PPA for Ubuntu Git Maintainers" imported
+gpg: Total number processed: 1
+gpg:               imported: 1  (RSA: 1)
+OK
+adminint1@gurpreet-thinkpad-t500:/$ sudo apt-get update
+sudo: unable to resolve host gurpreet-thinkpad-t500
+Get:1 http://security.ubuntu.com/ubuntu xenial-security InRelease [102 kB]
+Get:2 http://ppa.launchpad.net/git-core/ppa/ubuntu xenial InRelease [17.5 kB]  
+Hit:3 http://in.archive.ubuntu.com/ubuntu xenial InRelease                     
+Get:4 http://in.archive.ubuntu.com/ubuntu xenial-updates InRelease [102 kB]    
+Get:5 http://ppa.launchpad.net/git-core/ppa/ubuntu xenial/main amd64 Packages [3,260 B]
+Get:6 http://ppa.launchpad.net/git-core/ppa/ubuntu xenial/main i386 Packages [3,256 B]
+Get:7 http://ppa.launchpad.net/git-core/ppa/ubuntu xenial/main Translation-en [2,496 B]
+Get:8 http://in.archive.ubuntu.com/ubuntu xenial-backports InRelease [102 kB]
+Fetched 333 kB in 1s (243 kB/s)    
+Reading package lists... Done
+adminint1@gurpreet-thinkpad-t500:/$ sudo apt-get update
+sudo: unable to resolve host gurpreet-thinkpad-t500
+Hit:1 http://ppa.launchpad.net/git-core/ppa/ubuntu xenial InRelease
+Get:2 http://security.ubuntu.com/ubuntu xenial-security InRelease [102 kB]
+Hit:3 http://in.archive.ubuntu.com/ubuntu xenial InRelease                     
+Get:4 http://in.archive.ubuntu.com/ubuntu xenial-updates InRelease [102 kB]    
+Get:5 http://in.archive.ubuntu.com/ubuntu xenial-backports InRelease [102 kB]
+Fetched 306 kB in 1s (203 kB/s)    
+Reading package lists... Done
+adminint1@gurpreet-thinkpad-t500:/$ sudo apt-get update
+sudo: unable to resolve host gurpreet-thinkpad-t500
+Hit:1 http://ppa.launchpad.net/git-core/ppa/ubuntu xenial InRelease
+Hit:2 http://in.archive.ubuntu.com/ubuntu xenial InRelease
+Get:3 http://security.ubuntu.com/ubuntu xenial-security InRelease [102 kB]
+Get:4 http://in.archive.ubuntu.com/ubuntu xenial-updates InRelease [102 kB]    
+Get:5 http://in.archive.ubuntu.com/ubuntu xenial-backports InRelease [102 kB]  
+Fetched 306 kB in 1s (212 kB/s)    
+Reading package lists... Done
+adminint1@gurpreet-thinkpad-t500:/$ sudo apt-get install 
+Display all 54404 possibilities? (y or n)^C
+
+
+
+
+adminint1@gurpreet-thinkpad-t500:/$ sudo apt-get update git -
+
+
+
+--assume-yes             --help                   --quiet
+--auto-remove            --ignore-hold            --recon
+-b                       --ignore-missing         --reinstall
+--build                  --just-print             -s
+-c                       --list-cleanup           --show-upgraded
+--compile                -m                       --simulate
+--config-file            --no-act                 -t
+-d                       --no-download            --target-release
+--default-release        --no-install-recommends  --tar-only
+--diff-only              --no-remove              --trivial-only
+--download-only          --no-upgrade             -u
+--dry-run                -o                       -v
+-f                       --only-source            --version
+--fix-broken             --option                 -y
+--fix-missing            --print-uris             --yes
+--force-yes              --purge                  
+-h                       -q                       
+
+
+
+
+adminint1@gurpreet-thinkpad-t500:/$ sudo apt-get update git-core
+
+
+
+
+sudo: unable to resolve host gurpreet-thinkpad-t500
+
+
+
+
+
+adminint1@gurpreet-thinkpad-t500:/$ sudo apt-get install git-core
+
+
+
+
+sudo: unable to resolve host gurpreet-thinkpad-t500
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following additional packages will be installed:
+  git git-man liberror-perl
+Suggested packages:
+  git-daemon-run | git-daemon-sysvinit git-doc git-el git-email git-gui gitk
+  gitweb git-arch git-cvs git-mediawiki git-svn
+The following NEW packages will be installed:
+  git git-core git-man liberror-perl
+0 upgraded, 4 newly installed, 0 to remove and 285 not upgraded.
+Need to get 5,958 kB of archives.
+After this operation, 30.2 MB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 http://ppa.launchpad.net/git-core/ppa/ubuntu xenial/main amd64 git-man all 1:2.11.0-2~ppa0~ubuntu16.04.1 [1,432 kB]
+Get:2 http://in.archive.ubuntu.com/ubuntu xenial/main amd64 liberror-perl all 0.17-1.2 [19.6 kB]
+Get:3 http://ppa.launchpad.net/git-core/ppa/ubuntu xenial/main amd64 git amd64 1:2.11.0-2~ppa0~ubuntu16.04.1 [4,506 kB]
+Get:4 http://ppa.launchpad.net/git-core/ppa/ubuntu xenial/main amd64 git-core all 1:2.11.0-2~ppa0~ubuntu16.04.1 [1,432 B]
+Fetched 5,958 kB in 5s (1,137 kB/s)
+Selecting previously unselected package liberror-perl.
+(Reading database ... 175677 files and directories currently installed.)
+Preparing to unpack .../liberror-perl_0.17-1.2_all.deb ...
+Unpacking liberror-perl (0.17-1.2) ...
+Selecting previously unselected package git-man.
+Preparing to unpack .../git-man_1%3a2.11.0-2~ppa0~ubuntu16.04.1_all.deb ...
+Unpacking git-man (1:2.11.0-2~ppa0~ubuntu16.04.1) ...
+Selecting previously unselected package git.
+Preparing to unpack .../git_1%3a2.11.0-2~ppa0~ubuntu16.04.1_amd64.deb ...
+Unpacking git (1:2.11.0-2~ppa0~ubuntu16.04.1) ...
+Selecting previously unselected package git-core.
+Preparing to unpack .../git-core_1%3a2.11.0-2~ppa0~ubuntu16.04.1_all.deb ...
+Unpacking git-core (1:2.11.0-2~ppa0~ubuntu16.04.1) ...
+Processing triggers for man-db (2.7.5-1) ...
+Setting up liberror-perl (0.17-1.2) ...
+Setting up git-man (1:2.11.0-2~ppa0~ubuntu16.04.1) ...
+Setting up git (1:2.11.0-2~ppa0~ubuntu16.04.1) ...
+Setting up git-core (1:2.11.0-2~ppa0~ubuntu16.04.1) ...
+
+
+
+
+adminint1@gurpreet-thinkpad-t500:/$ curl -L https://git.io/n-install | bash
+
+
+
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0
+100 35655  100 35655    0     0  12653      0  0:00:02  0:00:02 --:--:-- 37101
+===
+You are ABOUT TO INSTALL n, the Node.js VERSION MANAGER, in:
+
+  /home/adminint1/n
+
+Afterward, THE FOLLOWING Node.js VERSION(S) WILL BE INSTALLED,
+and the first one listed will be made active; 'stable' refers to the
+latest stable Node.js version, 'latest' to the latest available;
+'-' means that no versions will be installed:
+
+  stable
+ 
+If your shell is Bash, Ksh, or Zsh, the relevant initialization file will be
+modified in order to:
+ - export environment variable $N_PREFIX.
+ - ensure that $N_PREFIX/bin is in the $PATH
+For any other shell you'll have to make these modifications yourself (details
+to follow).
+
+For more information, see https://git.io/n-install-repo
+===
+CONTINUE (y/N)? y
+-- Cloning https://github.com/tj/n to '/home/adminint1/n/n/.repo'...
+-- Running local n installation to '/home/adminint1/n/bin'...
+-- Shell initialization file '/home/adminint1/.bashrc' updated.
+-- Installing helper scripts in '/home/adminint1/n/bin'...
+-- Installing the requested Node.js version(s)...
+   1 of 1: stable...
+
+     install : node-v7.4.0
+       mkdir : /home/adminint1/n/n/versions/node/7.4.0
+       fetch : https://nodejs.org/dist/v7.4.0/node-v7.4.0-linux-x64.tar.gz
+######################################################################## 100.0%
+   installed : v7.4.0
+
+=== n successfully installed.
+  The active Node.js version is: v7.4.0
+
+  Run `n -h` for help.
+  To update n later, run `n-update`.
+  To uninstall, run `n-uninstall`.
+
+  IMPORTANT: OPEN A NEW TERMINAL TAB/WINDOW or run `. /home/adminint1/.bashrc`
+             before using n and Node.js.
+===
+adminint1@gurpreet-thinkpad-t500:/$ n -v
+n: command not found
+adminint1@gurpreet-thinkpad-t500:/$ node -v
+The program 'node' is currently not installed. You can install it by typing:
+sudo apt install nodejs-legacy
+adminint1@gurpreet-thinkpad-t500:/$ 
+

@@ -1,0 +1,599 @@
+adminint1@gurpreet-thinkpad-t500:~$ cd CL-api-baseproject
+adminint1@gurpreet-thinkpad-t500:~/CL-api-baseproject$ npm install
+npm WARN deprecated node-uuid@1.4.7: use uuid module instead
+npm WARN prefer global voc@0.5.0 should be installed with -g
+
+> bcrypt@1.0.2 install /home/adminint1/CL-api-baseproject/node_modules/bcrypt
+> node-pre-gyp install --fallback-to-build
+
+node-pre-gyp ERR! Tried to download(404): https://github.com/kelektiv/node.bcrypt.js/releases/download/v1.0.2/bcrypt_lib-v1.0.2-node-v48-linux-x64.tar.gz 
+node-pre-gyp ERR! Pre-built binaries not found for bcrypt@1.0.2 and node@6.9.4 (node-v48 ABI) (falling back to source compile with node-gyp) 
+make: Entering directory '/home/adminint1/CL-api-baseproject/node_modules/bcrypt/build'
+  CXX(target) Release/obj.target/bcrypt_lib/src/blowfish.o
+  CXX(target) Release/obj.target/bcrypt_lib/src/bcrypt.o
+  CXX(target) Release/obj.target/bcrypt_lib/src/bcrypt_node.o
+  SOLINK_MODULE(target) Release/obj.target/bcrypt_lib.node
+  COPY Release/bcrypt_lib.node
+  COPY /home/adminint1/CL-api-baseproject/node_modules/bcrypt/lib/binding/bcrypt_lib.node
+  TOUCH Release/obj.target/action_after_build.stamp
+make: Leaving directory '/home/adminint1/CL-api-baseproject/node_modules/bcrypt/build'
+
+> mmmagic@0.4.5 install /home/adminint1/CL-api-baseproject/node_modules/mmmagic
+> node-gyp rebuild
+
+make: Entering directory '/home/adminint1/CL-api-baseproject/node_modules/mmmagic/build'
+  CC(target) Release/obj.target/libmagic/deps/libmagic/src/apprentice.o
+  CC(target) Release/obj.target/libmagic/deps/libmagic/src/apptype.o
+  CC(target) Release/obj.target/libmagic/deps/libmagic/src/ascmagic.o
+  CC(target) Release/obj.target/libmagic/deps/libmagic/src/cdf.o
+  CC(target) Release/obj.target/libmagic/deps/libmagic/src/cdf_time.o
+  CC(target) Release/obj.target/libmagic/deps/libmagic/src/compress.o
+  CC(target) Release/obj.target/libmagic/deps/libmagic/src/der.o
+  CC(target) Release/obj.target/libmagic/deps/libmagic/src/encoding.o
+  CC(target) Release/obj.target/libmagic/deps/libmagic/src/fsmagic.o
+  CC(target) Release/obj.target/libmagic/deps/libmagic/src/funcs.o
+  CC(target) Release/obj.target/libmagic/deps/libmagic/src/is_tar.o
+  CC(target) Release/obj.target/libmagic/deps/libmagic/src/magic.o
+  CC(target) Release/obj.target/libmagic/deps/libmagic/src/print.o
+  CC(target) Release/obj.target/libmagic/deps/libmagic/src/readcdf.o
+  CC(target) Release/obj.target/libmagic/deps/libmagic/src/readelf.o
+  CC(target) Release/obj.target/libmagic/deps/libmagic/src/softmagic.o
+  CC(target) Release/obj.target/libmagic/deps/libmagic/src/fmtcheck.o
+  CC(target) Release/obj.target/libmagic/deps/libmagic/src/strlcat.o
+  CC(target) Release/obj.target/libmagic/deps/libmagic/src/strlcpy.o
+  AR(target) Release/obj.target/deps/libmagic/magic.a
+  COPY Release/magic.a
+  CC(target) Release/obj.target/libpcre/deps/libmagic/pcre/pcre_byte_order.o
+  CC(target) Release/obj.target/libpcre/deps/libmagic/pcre/pcre_chartables.o
+  CC(target) Release/obj.target/libpcre/deps/libmagic/pcre/pcre_compile.o
+  CC(target) Release/obj.target/libpcre/deps/libmagic/pcre/pcre_config.o
+  CC(target) Release/obj.target/libpcre/deps/libmagic/pcre/pcre_dfa_exec.o
+  CC(target) Release/obj.target/libpcre/deps/libmagic/pcre/pcre_exec.o
+  CC(target) Release/obj.target/libpcre/deps/libmagic/pcre/pcre_fullinfo.o
+  CC(target) Release/obj.target/libpcre/deps/libmagic/pcre/pcre_get.o
+  CC(target) Release/obj.target/libpcre/deps/libmagic/pcre/pcre_globals.o
+  CC(target) Release/obj.target/libpcre/deps/libmagic/pcre/pcre_jit_compile.o
+  CC(target) Release/obj.target/libpcre/deps/libmagic/pcre/pcre_maketables.o
+  CC(target) Release/obj.target/libpcre/deps/libmagic/pcre/pcre_newline.o
+  CC(target) Release/obj.target/libpcre/deps/libmagic/pcre/pcre_ord2utf8.o
+  CC(target) Release/obj.target/libpcre/deps/libmagic/pcre/pcre_refcount.o
+  CC(target) Release/obj.target/libpcre/deps/libmagic/pcre/pcre_string_utils.o
+  CC(target) Release/obj.target/libpcre/deps/libmagic/pcre/pcre_study.o
+  CC(target) Release/obj.target/libpcre/deps/libmagic/pcre/pcre_tables.o
+  CC(target) Release/obj.target/libpcre/deps/libmagic/pcre/pcre_ucd.o
+  CC(target) Release/obj.target/libpcre/deps/libmagic/pcre/pcre_valid_utf8.o
+  CC(target) Release/obj.target/libpcre/deps/libmagic/pcre/pcre_version.o
+  CC(target) Release/obj.target/libpcre/deps/libmagic/pcre/pcre_xclass.o
+  CC(target) Release/obj.target/libpcre/deps/libmagic/pcre/pcreposix.o
+  AR(target) Release/obj.target/deps/libmagic/pcre/pcre.a
+  COPY Release/pcre.a
+  CXX(target) Release/obj.target/magic/src/binding.o
+  SOLINK_MODULE(target) Release/obj.target/magic.node
+  COPY Release/magic.node
+make: Leaving directory '/home/adminint1/CL-api-baseproject/node_modules/mmmagic/build'
+skel@1.0.0 /home/adminint1/CL-api-baseproject
++-- aguid@1.0.4 
+| `-- node-uuid@1.4.7 
++-- apn@2.1.2 
+| +-- debug@2.6.0 
+| +-- http2@3.3.6 
+| +-- node-forge@0.6.47 
+| `-- verror@1.9.0 
+|   +-- assert-plus@1.0.0 
+|   +-- core-util-is@1.0.2 
+|   `-- extsprintf@1.3.0 
++-- app-module-path@2.2.0 
++-- async@2.1.4 
+| `-- lodash@4.17.4 
++-- aws-sdk@2.7.25 
+| +-- buffer@4.9.1 
+| | +-- base64-js@1.2.0 
+| | +-- ieee754@1.1.8 
+| | `-- isarray@1.0.0 
+| +-- crypto-browserify@1.0.9 
+| +-- jmespath@0.15.0 
+| +-- querystring@0.2.0 
+| +-- sax@1.1.5 
+| +-- url@0.10.3 
+| | `-- punycode@1.3.2 
+| +-- uuid@3.0.0 
+| +-- xml2js@0.4.15 
+| `-- xmlbuilder@2.6.2 
+|   `-- lodash@3.5.0 
++-- babyparse@0.4.6 
++-- bcrypt@1.0.2 
+| +-- bindings@1.2.1 
+| +-- nan@2.5.0 
+| `-- node-pre-gyp@0.6.32 
+|   +-- mkdirp@0.5.1 
+|   | `-- minimist@0.0.8 
+|   +-- nopt@3.0.6 
+|   | `-- abbrev@1.0.9 
+|   +-- npmlog@4.0.2 
+|   | +-- are-we-there-yet@1.1.2 
+|   | | `-- delegates@1.0.0 
+|   | +-- console-control-strings@1.1.0 
+|   | +-- gauge@2.7.2 
+|   | | +-- aproba@1.0.4 
+|   | | +-- has-unicode@2.0.1 
+|   | | +-- signal-exit@3.0.2 
+|   | | +-- supports-color@0.2.0 
+|   | | `-- wide-align@1.1.0 
+|   | `-- set-blocking@2.0.0 
+|   +-- rc@1.1.6 
+|   | +-- deep-extend@0.4.1 
+|   | +-- minimist@1.2.0 
+|   | `-- strip-json-comments@1.0.4 
+|   +-- rimraf@2.5.4 
+|   | `-- glob@7.1.1 
+|   |   +-- fs.realpath@1.0.0 
+|   |   +-- inflight@1.0.6 
+|   |   +-- minimatch@3.0.3 
+|   |   | `-- brace-expansion@1.1.6 
+|   |   |   +-- balanced-match@0.4.2 
+|   |   |   `-- concat-map@0.0.1 
+|   |   +-- once@1.4.0 
+|   |   `-- path-is-absolute@1.0.1 
+|   +-- semver@5.3.0 
+|   +-- tar@2.2.1 
+|   | +-- block-stream@0.0.9 
+|   | `-- fstream@1.0.10 
+|   |   `-- graceful-fs@4.1.11 
+|   `-- tar-pack@3.3.0 
+|     +-- debug@2.2.0 
+|     | `-- ms@0.7.1 
+|     +-- fstream-ignore@1.0.5 
+|     +-- once@1.3.3 
+|     | `-- wrappy@1.0.2 
+|     +-- readable-stream@2.1.5 
+|     `-- uid-number@0.0.6 
++-- boom@4.2.0 
+| `-- hoek@4.1.0 
++-- braintree@1.47.0 
+| +-- dateformat@1.0.1-1.2.3 
+| +-- depd@1.1.0 
+| +-- readable-stream@1.1.10 
+| | +-- debuglog@0.0.2 
+| | `-- string_decoder@0.10.31 
+| +-- semver@5.1.0 
+| +-- source-map-support@0.2.9 
+| | `-- source-map@0.1.32 
+| |   `-- amdefine@1.0.1 
+| +-- underscore@1.8.3 
+| `-- xml2js@0.1.13 
++-- cron@1.2.1 
+| `-- moment-timezone@0.5.11 
++-- csv-write-stream@2.0.0 
+| +-- argparse@1.0.9 
+| | `-- sprintf-js@1.0.3 
+| +-- generate-object-property@1.2.0 
+| | `-- is-property@1.0.2 
+| `-- ndjson@1.5.0 
+|   +-- minimist@1.2.0 
+|   +-- split2@2.1.1 
+|   `-- through2@2.0.3 
+|     `-- readable-stream@2.2.2 
++-- file-type@3.9.0 
++-- filepath@1.1.0 
+| `-- bluebird@3.0.5 
++-- gm@1.23.0 
+| +-- array-parallel@0.1.3 
+| +-- array-series@0.1.5 
+| +-- cross-spawn@4.0.2 
+| | `-- which@1.2.12 
+| |   `-- isexe@1.1.2 
+| `-- debug@2.2.0 
+|   `-- ms@0.7.1 
++-- hapi@16.1.0 
+| +-- accept@2.1.3 
+| +-- ammo@2.0.3 
+| +-- b64@3.0.2 
+| +-- boom@4.2.0 
+| +-- call@4.0.0 
+| +-- catbox@7.1.3 
+| +-- catbox-memory@2.0.4 
+| +-- content@3.0.3 
+| +-- cryptiles@3.1.1 
+| +-- heavy@4.0.3 
+| +-- hoek@4.1.0 
+| +-- iron@4.0.4 
+| +-- isemail@2.2.1 
+| +-- items@2.1.1 
+| +-- joi@10.1.0 
+| +-- mime-db@1.25.0 
+| +-- mimos@3.0.3 
+| +-- nigel@2.0.2 
+| +-- pez@2.1.4 
+| +-- podium@1.2.5 
+| +-- shot@3.4.0 
+| +-- statehood@5.0.1 
+| +-- subtext@4.3.0 
+| | `-- wreck@10.0.0 
+| +-- topo@2.0.2 
+| `-- vise@2.0.2 
++-- hapi-auth-jwt2@7.2.4 
+| `-- cookie@0.3.1 
++-- hapi-config@0.2.2 
+| +-- js-yaml@3.7.0 
+| | `-- esprima@2.7.3 
+| +-- lodash@3.10.1 
+| `-- nconf@0.8.4 
+|   +-- async@1.5.2 
+|   +-- ini@1.3.4 
+|   +-- secure-keys@1.0.0 
+|   `-- yargs@3.32.0 
+|     +-- camelcase@2.1.1 
+|     +-- cliui@3.2.0 
+|     | `-- wrap-ansi@2.1.0 
+|     +-- decamelize@1.2.0 
+|     +-- os-locale@1.4.0 
+|     | `-- lcid@1.0.0 
+|     |   `-- invert-kv@1.0.0 
+|     +-- string-width@1.0.2 
+|     | +-- code-point-at@1.1.0 
+|     | `-- is-fullwidth-code-point@1.0.0 
+|     |   `-- number-is-nan@1.0.1 
+|     +-- window-size@0.1.4 
+|     `-- y18n@3.2.1 
++-- hapi-swagger@7.6.0 
+| +-- handlebars@4.0.6 
+| | +-- async@1.5.2 
+| | +-- optimist@0.6.1 
+| | | `-- wordwrap@0.0.3 
+| | +-- source-map@0.4.4 
+| | `-- uglify-js@2.7.5 
+| |   +-- async@0.2.10 
+| |   +-- source-map@0.5.6 
+| |   +-- uglify-to-browserify@1.0.2 
+| |   `-- yargs@3.10.0 
+| |     +-- camelcase@1.2.1 
+| |     +-- cliui@2.1.0 
+| |     | +-- center-align@0.1.3 
+| |     | | +-- align-text@0.1.4 
+| |     | | | +-- kind-of@3.1.0 
+| |     | | | | `-- is-buffer@1.1.4 
+| |     | | | +-- longest@1.0.1 
+| |     | | | `-- repeat-string@1.6.1 
+| |     | | `-- lazy-cache@1.0.4 
+| |     | +-- right-align@0.1.3 
+| |     | `-- wordwrap@0.0.2 
+| |     `-- window-size@0.1.0 
+| +-- hoek@4.1.0 
+| +-- http-status@0.2.5 
+| +-- joi@10.0.5 
+| | +-- isemail@2.2.1 
+| | `-- topo@2.0.2 
+| +-- json-schema-ref-parser@3.1.2 
+| | +-- call-me-maybe@1.0.1 
+| | +-- es6-promise@3.3.1 
+| | +-- ono@2.2.4 
+| | `-- z-schema@3.18.2 
+| |   +-- lodash.get@4.4.2 
+| |   +-- lodash.isequal@4.5.0 
+| |   `-- validator@6.2.1 
+| `-- swagger-parser@3.4.1 
+|   +-- json-schema-ref-parser@1.4.1 
+|   +-- swagger-methods@1.0.0 
+|   `-- swagger-schema-official@2.0.0-bab6bed 
++-- inert@4.1.0 
+| +-- ammo@2.0.3 
+| | `-- hoek@4.1.0 
+| +-- hoek@4.1.0 
+| +-- items@2.1.1 
+| `-- lru-cache@4.0.2 
+|   +-- pseudomap@1.0.2 
+|   `-- yallist@2.0.0 
++-- ioredis@2.5.0 
+| +-- bluebird@3.4.7 
+| +-- cluster-key-slot@1.0.8 
+| +-- double-ended-queue@2.1.0-0 
+| +-- flexbuffer@0.0.6 
+| +-- redis-commands@1.3.0 
+| `-- redis-parser@1.3.0 
++-- joi@10.2.0 
+| +-- hoek@4.1.0 
+| +-- isemail@2.2.1 
+| `-- topo@2.0.2 
++-- jsonwebtoken@7.2.1 
+| +-- joi@6.10.1 
+| | +-- hoek@2.16.3 
+| | +-- isemail@1.2.0 
+| | `-- topo@1.1.0 
+| +-- jws@3.1.4 
+| | +-- base64url@2.0.0 
+| | +-- jwa@1.1.5 
+| | | +-- buffer-equal-constant-time@1.0.1 
+| | | `-- ecdsa-sig-formatter@1.0.9 
+| | `-- safe-buffer@5.0.1 
+| +-- lodash.once@4.1.1 
+| +-- ms@0.7.2 
+| `-- xtend@4.0.1 
++-- mmmagic@0.4.5 
++-- moment@2.17.1 
++-- mongoose@4.7.7 
+| +-- bson@1.0.4 
+| +-- hooks-fixed@1.2.0 
+| +-- kareem@1.2.0 
+| +-- mongodb@2.2.21 
+| | +-- es6-promise@3.2.1 
+| | +-- mongodb-core@2.1.6 
+| | | `-- require_optional@1.0.0 
+| | |   `-- resolve-from@2.0.0 
+| | `-- readable-stream@2.1.5 
+| |   +-- buffer-shims@1.0.0 
+| |   +-- process-nextick-args@1.0.7 
+| |   `-- util-deprecate@1.0.2 
+| +-- mpath@0.2.1 
+| +-- mpromise@0.5.5 
+| +-- mquery@2.0.0 
+| | +-- bluebird@2.10.2 
+| | +-- debug@2.2.0 
+| | | `-- ms@0.7.1 
+| | `-- sliced@0.0.5 
+| +-- muri@1.1.1 
+| +-- regexp-clone@0.0.1 
+| `-- sliced@1.0.1 
++-- mysql@2.12.0 
+| +-- bignumber.js@2.4.0 
+| +-- readable-stream@1.1.14 
+| | +-- inherits@2.0.3 
+| | `-- isarray@0.0.1 
+| `-- sqlstring@2.2.0 
++-- q@1.4.1 
++-- request@2.79.0 
+| +-- aws-sign2@0.6.0 
+| +-- aws4@1.5.0 
+| +-- caseless@0.11.0 
+| +-- combined-stream@1.0.5 
+| | `-- delayed-stream@1.0.0 
+| +-- extend@3.0.0 
+| +-- forever-agent@0.6.1 
+| +-- form-data@2.1.2 
+| | `-- asynckit@0.4.0 
+| +-- har-validator@2.0.6 
+| | +-- chalk@1.1.3 
+| | | +-- ansi-styles@2.2.1 
+| | | +-- escape-string-regexp@1.0.5 
+| | | +-- has-ansi@2.0.0 
+| | | | `-- ansi-regex@2.1.1 
+| | | +-- strip-ansi@3.0.1 
+| | | `-- supports-color@2.0.0 
+| | +-- commander@2.9.0 
+| | +-- is-my-json-valid@2.15.0 
+| | | +-- generate-function@2.0.0 
+| | | `-- jsonpointer@4.0.1 
+| | `-- pinkie-promise@2.0.1 
+| |   `-- pinkie@2.0.4 
+| +-- hawk@3.1.3 
+| | +-- boom@2.10.1 
+| | +-- cryptiles@2.0.5 
+| | | `-- boom@2.10.1 
+| | `-- sntp@1.0.9 
+| +-- http-signature@1.1.1 
+| | +-- assert-plus@0.2.0 
+| | +-- jsprim@1.3.1 
+| | | +-- extsprintf@1.0.2 
+| | | +-- json-schema@0.2.3 
+| | | `-- verror@1.3.6 
+| | `-- sshpk@1.10.2 
+| |   +-- asn1@0.2.3 
+| |   +-- bcrypt-pbkdf@1.0.0 
+| |   +-- dashdash@1.14.1 
+| |   +-- ecc-jsbn@0.1.1 
+| |   +-- getpass@0.1.6 
+| |   +-- jodid25519@1.0.2 
+| |   +-- jsbn@0.1.0 
+| |   `-- tweetnacl@0.14.5 
+| +-- is-typedarray@1.0.0 
+| +-- isstream@0.1.2 
+| +-- json-stringify-safe@5.0.1 
+| +-- mime-types@2.1.14 
+| | `-- mime-db@1.26.0 
+| +-- oauth-sign@0.8.2 
+| +-- qs@6.3.0 
+| +-- stringstream@0.0.5 
+| +-- tough-cookie@2.3.2 
+| | `-- punycode@1.4.1 
+| +-- tunnel-agent@0.4.3 
+| `-- uuid@3.0.1 
++-- secure-random@1.1.1 
++-- sockjs@0.3.18 
+| +-- faye-websocket@0.10.0 
+| | `-- websocket-driver@0.6.5 
+| |   `-- websocket-extensions@0.1.1 
+| `-- uuid@2.0.3 
++-- stripe@4.15.0 
+| +-- bluebird@2.11.0 
+| +-- lodash.isplainobject@4.0.6 
+| +-- object-assign@4.1.1 
+| `-- qs@2.4.2 
++-- vision@4.1.1 
+| `-- hoek@4.1.0 
++-- winston@2.3.0 
+| +-- async@1.0.0 
+| +-- colors@1.0.3 
+| +-- cycle@1.0.3 
+| +-- eyes@0.1.8 
+| `-- stack-trace@0.0.9 
++-- winston-daily-rotate-file@1.4.3 
+`-- xlsx@0.8.1 
+  +-- adler-32@1.0.0 
+  | +-- concat-stream@1.6.0 
+  | | `-- typedarray@0.0.6 
+  | `-- printj@1.0.0 
+  +-- cfb@0.10.3 
+  | `-- commander@2.9.0 
+  +-- codepage@1.6.0 
+  | +-- commander@2.9.0 
+  | `-- voc@0.5.0 
+  +-- commander@2.9.0 
+  | `-- graceful-readlink@1.0.1 
+  +-- crc-32@1.0.1 
+  +-- exit-on-epipe@1.0.0 
+  +-- jszip@2.4.0 
+  | `-- pako@0.2.9 
+  `-- ssf@0.8.2 
+    +-- colors@0.6.2 
+    `-- frac@0.3.1 
+
+npm WARN skel@1.0.0 No description
+npm WARN skel@1.0.0 No repository field.
+adminint1@gurpreet-thinkpad-t500:~/CL-api-baseproject$ git pull origin master
+remote: Counting objects: 5, done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 5 (delta 2), reused 0 (delta 0)
+Unpacking objects: 100% (5/5), done.
+From https://git.clicklabs.in/ClickLabs/CL-api-baseproject
+ * branch            master     -> FETCH_HEAD
+   bc3ee0c..8eceef9  master     -> origin/master
+Updating bc3ee0c..8eceef9
+Fast-forward
+ .gitignore         | 3 ++-
+ notes/redisInstall | 2 ++
+ 2 files changed, 4 insertions(+), 1 deletion(-)
+ create mode 100644 notes/redisInstall
+adminint1@gurpreet-thinkpad-t500:~/CL-api-baseproject$ sudo add-apt-repository ppa:chris-lea/redis-server
+sudo: unable to resolve host gurpreet-thinkpad-t500
+[sudo] password for adminint1: 
+ Redis is an open source, advanced key-value store. It is often referred to as a data structure server since keys can contain strings, hashes, lists, sets and sorted sets.
+ More info: https://launchpad.net/~chris-lea/+archive/ubuntu/redis-server
+Press [ENTER] to continue or ctrl-c to cancel adding it
+
+gpg: keyring `/tmp/tmp5ioi403i/secring.gpg' created
+gpg: keyring `/tmp/tmp5ioi403i/pubring.gpg' created
+gpg: requesting key C7917B12 from hkp server keyserver.ubuntu.com
+gpg: /tmp/tmp5ioi403i/trustdb.gpg: trustdb created
+gpg: key C7917B12: public key "Launchpad chrislea" imported
+gpg: Total number processed: 1
+gpg:               imported: 1  (RSA: 1)
+OK
+adminint1@gurpreet-thinkpad-t500:~/CL-api-baseproject$ sudo apt-get update
+sudo: unable to resolve host gurpreet-thinkpad-t500
+Get:1 http://security.ubuntu.com/ubuntu xenial-security InRelease [102 kB]
+Get:2 http://ppa.launchpad.net/chris-lea/redis-server/ubuntu xenial InRelease [17.6 kB]
+Hit:3 http://in.archive.ubuntu.com/ubuntu xenial InRelease                     
+Get:4 http://in.archive.ubuntu.com/ubuntu xenial-updates InRelease [102 kB]    
+Hit:5 http://ppa.launchpad.net/git-core/ppa/ubuntu xenial InRelease            
+Get:6 http://ppa.launchpad.net/chris-lea/redis-server/ubuntu xenial/main amd64 Packages [1,093 B]
+Get:7 http://ppa.launchpad.net/chris-lea/redis-server/ubuntu xenial/main i386 Packages [1,096 B]
+Get:8 http://ppa.launchpad.net/chris-lea/redis-server/ubuntu xenial/main Translation-en [678 B]
+Hit:9 http://in.archive.ubuntu.com/ubuntu xenial-backports InRelease           
+Fetched 225 kB in 1s (163 kB/s)
+Reading package lists... Done
+adminint1@gurpreet-thinkpad-t500:~/CL-api-baseproject$ git pull origin masterremote: Counting objects: 4, done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 4 (delta 1), reused 0 (delta 0)
+Unpacking objects: 100% (4/4), done.
+From https://git.clicklabs.in/ClickLabs/CL-api-baseproject
+ * branch            master     -> FETCH_HEAD
+   8eceef9..14055bf  master     -> origin/master
+Updating 8eceef9..14055bf
+Fast-forward
+ notes/redisInstall | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+adminint1@gurpreet-thinkpad-t500:~/CL-api-baseproject$ git git
+git: 'git' is not a git command. See 'git --help'.
+
+Did you mean this?
+	init
+adminint1@gurpreet-thinkpad-t500:~/CL-api-baseproject$ sudo apt-get install redis-server
+sudo: unable to resolve host gurpreet-thinkpad-t500
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following packages were automatically installed and are no longer required:
+  filezilla-common libfilezilla0 libpugixml1v5 libwxbase3.0-0v5
+  libwxgtk3.0-0v5
+Use 'sudo apt autoremove' to remove them.
+The following additional packages will be installed:
+  libjemalloc1 redis-tools
+The following NEW packages will be installed:
+  libjemalloc1 redis-server redis-tools
+0 upgraded, 3 newly installed, 0 to remove and 285 not upgraded.
+Need to get 518 kB of archives.
+After this operation, 1,440 kB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 http://ppa.launchpad.net/chris-lea/redis-server/ubuntu xenial/main amd64 redis-tools amd64 3:3.0.7-1chl1~xenial1 [87.3 kB]
+Get:2 http://in.archive.ubuntu.com/ubuntu xenial/universe amd64 libjemalloc1 amd64 3.6.0-9ubuntu1 [78.9 kB]
+Get:3 http://ppa.launchpad.net/chris-lea/redis-server/ubuntu xenial/main amd64 redis-server amd64 3:3.0.7-1chl1~xenial1 [352 kB]
+Fetched 518 kB in 4s (112 kB/s)        
+Selecting previously unselected package libjemalloc1.
+(Reading database ... 176529 files and directories currently installed.)
+Preparing to unpack .../libjemalloc1_3.6.0-9ubuntu1_amd64.deb ...
+Unpacking libjemalloc1 (3.6.0-9ubuntu1) ...
+Selecting previously unselected package redis-tools.
+Preparing to unpack .../redis-tools_3%3a3.0.7-1chl1~xenial1_amd64.deb ...
+Unpacking redis-tools (3:3.0.7-1chl1~xenial1) ...
+Selecting previously unselected package redis-server.
+Preparing to unpack .../redis-server_3%3a3.0.7-1chl1~xenial1_amd64.deb ...
+Unpacking redis-server (3:3.0.7-1chl1~xenial1) ...
+Processing triggers for libc-bin (2.23-0ubuntu3) ...
+Processing triggers for man-db (2.7.5-1) ...
+Processing triggers for systemd (229-4ubuntu7) ...
+Processing triggers for ureadahead (0.100.0-19) ...
+ureadahead will be reprofiled on next reboot
+Setting up libjemalloc1 (3.6.0-9ubuntu1) ...
+Setting up redis-tools (3:3.0.7-1chl1~xenial1) ...
+Setting up redis-server (3:3.0.7-1chl1~xenial1) ...
+adduser: Warning: The home directory `/var/lib/redis' does not belong to the user you are currently creating.
+Processing triggers for libc-bin (2.23-0ubuntu3) ...
+Processing triggers for systemd (229-4ubuntu7) ...
+Processing triggers for ureadahead (0.100.0-19) ...
+adminint1@gurpreet-thinkpad-t500:~/CL-api-baseproject$ redis
+No command 'redis' found, did you mean:
+ Command 'redir' from package 'redir' (universe)
+redis: command not found
+adminint1@gurpreet-thinkpad-t500:~/CL-api-baseproject$ redis-cli ping
+PONG
+adminint1@gurpreet-thinkpad-t500:~/CL-api-baseproject$ redis-cli pong
+(error) ERR unknown command 'pong'
+adminint1@gurpreet-thinkpad-t500:~/CL-api-baseproject$ NODE_ENV=development
+adminint1@gurpreet-thinkpad-t500:~/CL-api-baseproject$ node index.js
+11:17:33 AM - info: hapi-auth-jwt2 registered successfully
+11:17:33 AM - info: Server started as http://0.0.0.0:3001
+11:17:33 AM - error: error when connecting to db: Error: connect ECONNREFUSED 127.0.0.1:3306
+    at Object.exports._errnoException (util.js:1022:11)
+    at exports._exceptionWithHostPort (util.js:1045:20)
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1087:14)
+    --------------------
+    at Protocol._enqueue (/home/adminint1/CL-api-baseproject/node_modules/mysql/lib/protocol/Protocol.js:141:48)
+    at Protocol.handshake (/home/adminint1/CL-api-baseproject/node_modules/mysql/lib/protocol/Protocol.js:52:41)
+    at Connection.connect (/home/adminint1/CL-api-baseproject/node_modules/mysql/lib/Connection.js:136:18)
+    at initConnectionToMySQL (/home/adminint1/CL-api-baseproject/config/index.js:53:18)
+    at Object.<anonymous> (/home/adminint1/CL-api-baseproject/config/index.js:127:9)
+    at Module._compile (module.js:570:32)
+    at Object.Module._extensions..js (module.js:579:10)
+    at Module.load (module.js:487:32)
+    at tryModuleLoad (module.js:446:12)
+    at Function.Module._load (module.js:438:3)
+    at Module.require (module.js:497:17)
+    at require (internal/module.js:20:19)
+    at Object.<anonymous> (/home/adminint1/CL-api-baseproject/index.js:43:16)
+    at Module._compile (module.js:570:32)
+    at Object.Module._extensions..js (module.js:579:10)
+    at Module.load (module.js:487:32)
+    at tryModuleLoad (module.js:446:12)
+    at Function.Module._load (module.js:438:3)
+    at Module.runMain (module.js:604:10)
+    at run (bootstrap_node.js:394:7)
+    at startup (bootstrap_node.js:149:9)
+    at bootstrap_node.js:509:3
+DB Error:  { MongoError: failed to connect to server [localhost:27017] on first connect
+    at Pool.<anonymous> (/home/adminint1/CL-api-baseproject/node_modules/mongodb-core/lib/topologies/server.js:326:35)
+    at emitOne (events.js:96:13)
+    at Pool.emit (events.js:188:7)
+    at Connection.<anonymous> (/home/adminint1/CL-api-baseproject/node_modules/mongodb-core/lib/connection/pool.js:272:12)
+    at Connection.g (events.js:291:16)
+    at emitTwo (events.js:106:13)
+    at Connection.emit (events.js:191:7)
+    at Socket.<anonymous> (/home/adminint1/CL-api-baseproject/node_modules/mongodb-core/lib/connection/connection.js:175:49)
+    at Socket.g (events.js:291:16)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at emitErrorNT (net.js:1278:8)
+    at _combinedTickCallback (internal/process/next_tick.js:74:11)
+    at process._tickDomainCallback (internal/process/next_tick.js:122:9)
+  name: 'MongoError',
+  message: 'failed to connect to server [localhost:27017] on first connect' }
+adminint1@gurpreet-thinkpad-t500:~/CL-api-baseproject$ 
+
