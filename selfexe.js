@@ -18,3 +18,7 @@ function sync2()
 }
 
 },4000);
+
+
+
+console.log("version");
