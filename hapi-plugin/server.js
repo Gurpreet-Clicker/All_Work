@@ -4,7 +4,8 @@ var Hapi = require('hapi')
 var server = new Hapi.Server()
 
 var Bcrypt = require('bcrypt')  
-var BasicAuth = require('hapi-auth-basic')
+var BasicAuth = require('hapi-auth-basic');
+var Joi=require('joi');
 
 
 
@@ -58,6 +59,7 @@ server.route(
    	reply.view('facebook',{mail:email});
    }*/
 
+   
 
  
       handler: function (request, reply) {
@@ -65,18 +67,18 @@ server.route(
       	var password=request.payload.password;
       	if(email != users.future.email)
       	{
-      		reply("User Doesn't exists!!!");
+      		reply(request.payload); //
       	}
       	else
       	{
       	Bcrypt.compare(password, users.future.password, function (err, isValid) {
 
       		if(!err && isValid) {
-          reply('great success'); // or what ever you want to rply 
+          reply(request.payload); // or what ever you want to rply 
         }
         else
         {
-        	reply('oops!! Authentication Error');
+        	reply(request.payload);
 
         }
      // console.log(password);
@@ -85,6 +87,14 @@ server.route(
        
    });
       }
+      },
+
+      config:{
+      	validate:{
+      		payload:{
+      			email:Joi.string().min(3).max(10)
+      		}
+      	}
       }
     
    });
